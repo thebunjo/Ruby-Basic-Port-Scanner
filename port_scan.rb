@@ -39,7 +39,7 @@ def port_scan_with_threads(host, port_list, timeout_seconds = 1)
   threads.each(&:join)
 end
 
-host = 'baban.com'
+host = 'target.com'
 port_list = [21, 22, 23, 25, 53, 80, 139, 443, 445, 3306, 8080, 3389, 5900, 8081]
 
 port_scan_with_threads(host, port_list, 1)
